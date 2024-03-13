@@ -1,0 +1,31 @@
+.box{
+    background-color: aqua;
+    height:100px;
+    width:110px;
+    border:1px solid black;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+/* translateZ() moves on z axis for sawing the changes we need a perspective */
+#translated{
+    transform:perspective(60px) translateZ(-30px);
+}
+
+/* scaleZ() scaled on z-axis for seeing the scaling we need to rotate */
+#scaled{
+    margin-left: 80px;
+    background-image: linear-gradient(red,green,yellow);
+    transform:perspective(60px) scaleZ(1) rotateX(-45deg);
+}
+
+/* rotateZ() we does't need the prepective for seeing the rotataion on z-axis */
+#rotate{
+    transform:rotateZ(-45deg);
+}
+
+/* skew --we cant use skew on z-axis(only x&y-axis)*/
+#skew{
+    transform:skew(45deg);
+
+    /* WE CAN USE prespective() TRASLATEx/y/z() SCALEx/y/z() ROTATEx/y/z() TOGETHER */
+}

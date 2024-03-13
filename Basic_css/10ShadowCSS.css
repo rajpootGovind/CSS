@@ -1,0 +1,39 @@
+/* single shadow */
+h1{
+    text-shadow:red 4px 3px 2px;
+}
+
+/* Multiple text shadow */
+/* - show the shadow direction is reverse */
+ h2{
+    text-shadow:green 3px 3px 2px, yellow -5px -5px 1px;
+ }
+
+ /* Border-shadow */
+ .box{
+    height:200px;
+    width:200px;
+    border:1px black solid;
+    margin:10px;
+    box-shadow:3px 3px, -4px -4px;
+ }
+/* change sign for changing the shadow direction, and inset convert outer shadow into inner */
+ .box1{
+    height:300px;
+    width:350px;
+    border:2px solid black;
+    margin:10px;
+    color:red;
+    box-shadow:3px 3px 2px green, 5px 5px 2px blue,-2px -2px 2px, inset 0px 7px 50px green;
+    /* background-image:linear-gradient(to right bottom,red , green , blue ); */
+ }
+
+ /* for Spread radius */
+ .box2{
+    height:200px;
+    width:200px;
+    border:2px solid black;
+    margin:20px;
+    box-shadow: 2px 1px 2px 4px red;
+ }
+

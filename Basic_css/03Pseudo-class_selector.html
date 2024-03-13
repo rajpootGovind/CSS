@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class selector</title>
+    <!-- pseudo-class is a keyword that specify special state of an elements -->
+<style>
+    /* pseudo-class with element/tag/type selector */
+    button:hover{
+        color:blue;
+        
+        /* All properties will apply at the time of hovering, which is 
+        a special state of element */
+    }
+    button:active{
+        color:yellow;
+/* we can use multiple pseudo-class with one selector */
+    }
+
+    /* pseudo-class with id selector */
+    first-link:visited{
+        color:red
+    }
+    /* with class selectors */
+    para:hover{
+        color:blue;
+    }
+</style>
+
+</head>
+
+<body>
+    <button>Click here</button>
+    <a id="first-link" href="https.//youtube.com" target="_blank">Go to Youtube</a>
+
+    <p class="para">ok</p>
+    <p class="para">hello!</p>
+    <p>listen</p>
+</body>
+</html>

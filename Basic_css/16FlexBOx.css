@@ -1,0 +1,58 @@
+.container{
+    height:700px;
+    background-color: rgb(195, 229, 218);
+    border:2px solid black;
+
+/* converting div elements(block element)into flexible */
+    display:flex;
+
+    /* 1. flex-direction(row,column,row-reverse,column-reverse)used for change the 
+    direction of MAIN axis(default value row) */
+   
+    flex-direction:row-reverse;
+    flex-direction:column;/*now main axis is vertical axis*/
+    flex-direction:column-reverse;
+    flex-direction:row;
+
+    /* 2. flex-wrap(wrap,nowrap,wrape-reverse)used for making intact width of items untill it is possible  */
+    
+    flex-wrap:wrap-reverse;
+    flex-wrap:nowrap;/*default value*/
+    flex-wrap:wrap;
+
+    /* 3. flex-flow(shorthand property of flex-direction and flex-flow */
+    /* flex-flow:row nowrap; */
+
+    /* 4. justify-content(flex-start,flex-end,center,space-arround,space-between,space-evenly)
+    it is used for allignment of items in MAIN axis */
+   
+    justify-content:flex-end;
+    justify-content:center;
+    justify-content:space-around;
+    justify-content:space-between;
+    justify-content:space-evenly;
+    justify-content:flex-start;
+
+    /* 5. align-items(flex-start,flex-end,center,stretch,baseline,____gap:__px)
+    it is used for ACROSS axis allignment */
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:center;
+    align-items:stretch;/*default value*/
+    align-items:baseline;/*if child items have different baseline*/
+    gap:10px;/*------for gapping between flex items in px-----*/
+
+    /* 6. align-content(flex-start,flex-end, center,space-around, space-between, space-evenly)
+    it is used for handeling the space among the rows */
+    align-content:flex-start;
+    align-content:space-evenly; 
+}
+
+
+/* child elements(flex items) */
+.box{
+    /* height:40px; */
+    width:100px;/*for content-align properties*/
+    background-color: yellowgreen;
+    border:1px solid black;
+}

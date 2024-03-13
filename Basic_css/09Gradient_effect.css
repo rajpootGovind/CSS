@@ -1,0 +1,69 @@
+/* for default direction */
+.box {
+    height: 200px;
+    width: 250px;
+    border: solid;
+    background-image:linear-gradient(green,pink);
+}
+
+/* for specific direction */
+.box2{
+    height:220px;
+    width:160px;
+    border:solid black;
+    background-image: linear-gradient(to right bottom,red, orange,yellow);
+}
+
+/* for angles */
+.box3{
+    height:230px;
+    width:280px;
+    border:solid black;
+    margin: 10px;
+    background-image: linear-gradient(75deg,blue,white,yellow);
+}
+
+/* for Transparency */
+
+.box4{
+    height:210px;
+    width:350px;
+    border:solid black;
+    margin: 10px;
+    background-image:linear-gradient(to right top,rgb(255,0,0,75%),rgb(0,0,255,0),green);
+    /*OR (#ff000075, #00ff0001,green */
+}
+
+/* Radial Gradient */
+/* Default */
+.box5{
+    height:250px;
+    width:200px;
+    border:solid;
+    background-image: radial-gradient(orange,white,green);
+}
+
+/* with shape(only circle) */
+.box6{
+    height:300px;
+    width:240px;
+    border:solid;
+    /* for curving the corner of rectangle box */
+    border-radius: 30%;
+    margin:9px;
+    background-image:repeating-radial-gradient(circle,orange 20%,white,green );
+
+}
+hr{
+    border-color:red;
+}
+/* Conical-gradients */
+
+.box7{
+    height:300px;
+    width:240px;
+    border:solid;
+    margin:9px;
+    background-image:conic-gradient(violet ,indigo,blue,green,yellow,orange,red) ;
+    background-image:conic-gradient(from 180deg,violet ,indigo,blue,green,yellow,orange,red) ;
+}

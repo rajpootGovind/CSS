@@ -1,0 +1,15 @@
+/*max-height/width  */
+.box{
+    max-height:50px;
+    border:solid;
+    /* for over from the content overflow(shorthand property) we use overflow css property */
+    overflow:scroll;
+}
+/* min-height/width */
+.box2{
+    min-height: 20px;
+    margin:10px;
+    border:3px solid black ;
+/* box increase own size after content is more than box limit */
+
+}

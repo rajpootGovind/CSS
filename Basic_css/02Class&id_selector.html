@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & id selector</title>
+
+    <style>
+        .one{
+            color:rgb(241, 15, 245);
+            font-size: larger;
+        }
+        /* class selector and id selector */
+        .two, #first-small{
+            color:rgb(228, 77, 77);
+            text-decoration:overline ;
+        }
+        .big{
+            font-size: small;
+        }
+        .small{
+            font-size: large;
+        }
+        #first-button{
+            color:red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p class="one">abcd</p>
+    <p class="two">efgh</p>
+    <p class="one">ijkl</p>
+    <p class="two">mnop</p>
+    <p class="one">qrst</p>
+
+    <h1 class="big">Hello!</h1>
+    <h2 class="big">Hello!</h2>
+    <h3 class="one">Hello!</h3>
+    <h4 class="small" id="first-small">Hello!</h4> <!--class with id-->
+    <h5 class="small">Hello!</h5>
+    <h6 class="small">Hello!</h6>
+
+    <!-- id selector -->
+    <button id="first-button">submit</button>
+</body>
+</html>

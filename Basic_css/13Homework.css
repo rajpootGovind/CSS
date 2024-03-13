@@ -1,0 +1,39 @@
+.box{
+    color:red;
+    height:50px;
+    width:50px;
+    display:inline-block;
+    background-color:pink;
+    /*margin:5px; */
+}
+.bigBox{
+    height:1000vh;
+    width:100vw;
+    background-color: aquamarine;
+}
+#box2{
+    position:relative;
+    left:746px;
+    
+}
+#box3{
+    position:relative;
+    left:693px;
+    top:379px;
+   
+}
+#box4{
+    position:relative;
+    right:162px;
+    top:379px;
+   
+}
+#box5{
+    position:relative;
+    left:162px;
+    top:190px;
+   
+}
+/* .box{
+    position:fixed;
+} */

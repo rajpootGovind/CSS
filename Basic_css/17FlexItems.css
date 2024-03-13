@@ -1,0 +1,44 @@
+.container{
+    height:600px;
+    background-color:rgb(193, 229, 229) ;
+    border:2px solid red;
+    display:flex;/*element allign on main axis(by default horizontal)*/
+    justify-content:center;
+    align-items:center;
+    align-content:flex-start;
+    /* gap:10px; */
+}
+
+.box{
+    background-color: yellow;
+    border:1px solid black;
+   /* flex-grow:0; default value*/
+    /* value of flex-basis can be give in px or percentage(flex box percentage) */
+    flex-basis:100px;
+    /* width:100px; */
+   /* flex-shrink:1;default value*/
+/* Flex- Shorthand notation of order,flex-grow,flex-shrink,flex-basis*/
+/* Align-self--@ for align individual item
+(flex-start, flex-end,center,stretch,baseline) */
+    
+}
+
+/* order */
+#box1{
+    order:1;
+    /* flex-shrink:5; */
+}
+#box3{
+    order:3;
+    /* flex-grow:1; */
+
+}
+#box2{
+    order:2;
+    /* flex-grow:1; */
+}
+#box4{
+    order:2;
+    align-self:stretch;
+}
+/*in case of same order items goes on right side of item.....(sir says left) */

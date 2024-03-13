@@ -1,0 +1,40 @@
+.box{
+    background-color: blue;
+    width: 70px;
+    height:20px;
+    margin:70px;
+}
+
+
+/* translate() */
+#box1{
+    transform:translate(20px,40px);
+    /* transform: translateX(30px); */
+}
+
+/* rotate() +deg for clockwise rotation, -deg for anticlwise direction */
+#box2{
+    transform:rotate(-74deg);
+    transform: rotateX(45deg);
+}
+
+/* scale(), can give real value */
+#box3{
+    transform:scale(3,5);
+    /* transform:scaleX(4); */
+}
+
+/* skew(), used for tilting */
+#box4{
+    transform:skew(45deg);
+    transform: skewY(45deg);
+}
+/* THESE ALL ARE SHORT-HANDED PROPERTIES */
+
+/* matrix() 
+transform:matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+#box5{
+    color:yellow;
+    transform:matrix(2, -2, 0, 2, 50, 50);/*be careful during skew value*/
+
+}

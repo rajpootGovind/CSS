@@ -1,0 +1,54 @@
+/* static postion(default position) */
+p{
+    position:static;
+    top:100px;
+    height:50px;
+    width:50px;
+    background-color: aqua;
+}
+
+
+.box{
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    display:inline-block;
+    background-color:brown ;  
+  }
+
+/* relative position */
+  /* #box2{
+    position:relative;
+    top:20px;
+    left:30px;
+    // box2 shifted from top by 20px and from left 30px //
+} */
+
+/* fixed postion */
+.bigBox{
+    height:2000px;
+    width:100vw;
+    background-color: yellow;
+}
+#box1{
+    position:fixed;
+    left:30px;
+}
+
+
+/* absolute position */
+#absbox{
+    background-color: blue;
+    height:20px;
+    width:25px;
+    border:1px solid black;
+    position:absolute;
+    left:10px;
+    top:12.5px;
+}
+/* sticky position */
+#box3{
+    position:sticky;
+    left:150px;
+    top:0px;
+}
